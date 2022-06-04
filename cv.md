@@ -5,7 +5,7 @@
 - **phone:** +79506548824
 - **E-mail:** annakhmv@gmail.com
 - **github:** kulonik
-- [**linkedin:**](linkedin.com/in/anna-khamieva-66325b22b)
+- **linkedin:** ![](linkedin.com/in/anna-khamieva-66325b22b)
 - **discord:** annakhmv (@kulonik)
 
 ---
@@ -42,12 +42,12 @@ function solution(str){
 
 ## Experience:
 
-My [website](english-gdz.ru) (it's not excelent, just my first attempt)
+My [website](https://english-gdz.ru/) (it's not excelent, just my first attempt)
 
 ## Education:
 
 - radio building college
-- www.freecodecamp.org
+- ![](www.freecodecamp.org)
 
 ---
 
