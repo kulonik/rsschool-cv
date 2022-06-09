@@ -1,3 +1,24 @@
+@font-face {
+    font-family: Roboto;
+    src: url("assets/fonts/Roboto.ttf")
+}
+
 body {
-    background-color: rgb(119, 87, 39);
+    font-family: 'Roboto';
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body > * {
+    border: 1px solid red;
+    margin: 0px; 
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
 }
