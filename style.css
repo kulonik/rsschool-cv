@@ -9,6 +9,7 @@ body {
 
 * {
     box-sizing: border-box;
+    font-size: 16px;
 }
 
 body > * {
@@ -26,4 +27,39 @@ body {
 .container {
     max-width: 1440px;
     margin: 0 auto;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.nav-list {
+    list-style: none;
+}
+
+.nav-link {
+    padding: 10px 20px;
+    line-height: 50px;
+    text-decoration: none;
+    transition: .3s;
+}
+
+.nav-link:hover {
+    background-color: rgb(235, 235, 99);
+}
+
+.nav-item a {
+    color: #829985;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+.nav-item a:hover {
+    color: #4d2323;
 }
