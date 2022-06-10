@@ -6,11 +6,11 @@
 body {
     font-family: 'Roboto';
     font-size: 18px;
+    background-color: #06283D;
 }
 
 * {
     box-sizing: border-box;
-    font-size: 16px;
 }
 
 body > * {
@@ -78,4 +78,15 @@ html {
     .section {
         width: 100%;
     }
+}
+
+h1 {
+    text-align: center;
+}
+
+.body {
+    width: 80%;
+    margin-left: auto;
+    margin-right:auto;
+    background-color: #DFF6FF;
 }
