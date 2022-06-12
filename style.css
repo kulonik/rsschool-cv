@@ -13,10 +13,6 @@ body {
     box-sizing: border-box;
 }
 
-body > * {
-    border: 1px solid red;
-    margin: 0px; 
-}
 
 body {
     display: flex;
@@ -26,8 +22,8 @@ body {
 }
 
 .container {
-    max-width: 1440px;
     margin: 0 auto;
+    width: 100%;
 }
 
 .nav-list {
@@ -40,7 +36,17 @@ html {
     scroll-behavior: smooth;
 }
 
-.nav-list {
+header {
+    position: absolute;
+    background-color: #1363DF;
+    color: #DFF6FF;
+    width: 100%;
+    height: 70px;
+    width: auto;
+    text-align: justify;
+}
+
+.nav-list, .info, .courses {
     list-style: none;
 }
 
@@ -48,21 +54,23 @@ html {
     padding: 10px 20px;
     line-height: 50px;
     text-decoration: none;
-    transition: .3s;
 }
 
 .nav-link:hover {
-    background-color: rgb(235, 235, 99);
+    background-color: #47B5FF;
 }
 
 .nav-item a {
-    color: #829985;
+    color: #DFF6FF;
     text-decoration: none;
-    transition: color 0.5s;
 }
 
 .nav-item a:hover {
-    color: #4d2323;
+    color: #DFF6FF;
+}
+
+.main {
+    padding-top: 90px;;
 }
 
 .main-container {
@@ -71,17 +79,22 @@ html {
 }
 
 .section {
-    width: 50%;
+    width: 45%;
+    padding: 0 20px;
 }
 
 @media (max-width: 768px) {
     .section {
         width: 100%;
     }
+    .main {
+        width: 100%;
+    }
 }
 
 h1 {
     text-align: center;
+    text-transform: uppercase;
 }
 
 .body {
@@ -89,4 +102,12 @@ h1 {
     margin-left: auto;
     margin-right:auto;
     background-color: #DFF6FF;
+}
+.info, .skills, .courses {
+    padding-left: 0;
+}
+.footer-container {
+    background-color: #1363DF;
+    display: inline-block;
+    width: 100%;
 }
