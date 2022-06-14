@@ -25,9 +25,8 @@ header {
     position: relative;
     background-color: #1363DF;
     color: #DFF6FF;
-    height: 80px;
+    height: auto;
     width: 100%;
-    text-align: justify;
 }
 
 .container {
@@ -38,7 +37,6 @@ header {
 
 .nav-list {
     display: inline-flex;
-    justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
 }
@@ -71,7 +69,7 @@ html {
 }
 
 .main {
-    padding-top: 90px;;
+    padding-top: 50px;
 }
 
 .main-container {
