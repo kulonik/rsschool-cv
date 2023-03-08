@@ -19,3 +19,38 @@ First I was an English teacher at a secondary school, after that I worked at the
 Probably I will be able to find a job in a different department at the same bank or to go to another place.
 
 ---
+
+## Skills:
+
+1. HTML
+2. CSS
+3. JavaScript
+4. Visual Studio Code
+5. Github and Git
+
+---
+
+## Code example:
+
+```
+function solution(str){
+  return str.split('').reverse().join('');
+}
+```
+
+---
+
+## Experience:
+
+My [website](https://english-gdz.ru/) (it's not excelent, just my first attempt)
+
+## Education:
+
+- radio building college
+- <www.freecodecamp.org>
+
+---
+
+## Language:
+
+Level B1-B2
