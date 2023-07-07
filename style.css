@@ -1,5 +1,384 @@
-body {
-  background: lightblue;
+*,
+::before,
+::after {
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
+}
+
+html {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  font-size: 10px;
+  overflow-x: hidden;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* header styles start */
+
+header {
+  position: fixed;
+  width: 100vw;
+  height: 80px;
+  background-color: #e48257;
+  color: #f2edd7;
+  font-size: 16px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  z-index: 5;
+}
+
+#navbar {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
+.navbar-list {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  text-align: right;
+}
+
+.navbar-list-item {
+  list-style-type: none;
+  height: 100%;
+  padding: 31px;
+}
+.navbar-list-item a {
+  text-decoration: none;
+  color: #f2edd7;
+}
+
+.navbar-list-item:hover,
+.navbar-list-item:active {
+  background-color: #3a6351;
+  cursor: pointer;
+}
+
+/* header styles end */
+
+/* welcome-section styles start */
+
+.welcome-section {
+  width: 100vw;
+  height: 100vh;
+  background-color: #393232;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.welcome-img {
+  position: absolute;
+  width: 300px;
+  border-radius: 200px;
+  top: 120px;
+  left: 80px;
+  z-index: 3;
+}
+.welcome__title {
+  position: absolute;
+  top: 120px;
+  left: 500px;
+}
+.welcome__title h1 {
+  font-size: 6rem;
+  font-family: Verona, sans-serif;
+  color: #f2edd7;
+}
+
+.welcome__title p {
+  font-size: 2.5rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #e48257;
+  text-align: center;
+}
+
+.desc {
+  position: absolute;
+  top: 250px;
+  left: 350px;
+  width: 500px;
+  font-size: 1.8rem;
+  background-color: #f2edd7;
+  color: #393232;
+  padding: 50px;
+  border-radius: 0 150px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 2.8rem;
+}
+
+.education {
+  position: absolute;
+  top: 500px;
+  left: 100px;
+  color: #f2edd7;
+}
+
+h2 {
+  font-size: 3rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #f2edd7;
+}
+
+.education ul {
+  color: #393232;
+  background: #f2edd7;
+  padding: 30px;
+  margin: 20px 20px 20px 0;
+  border-radius: 20px 0;
+
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+}
+
+.education ul li {
+  list-style-type: circle;
+}
+
+.education ul li a {
+  color: #393232;
+}
+
+.code h2 {
+  position: absolute;
+  top: 500px;
+  left: 650px;
+}
+
+.code-desc {
+  width: 470px;
+  font-size: 16px;
+  background: #f2edd7;
+  position: absolute;
+  top: 570px;
+  left: 500px;
+  border-radius: 25px;
+}
+
+.devider {
+  width: 3px;
+  height: 70vh;
+  background: #e48257;
+  position: absolute;
+  left: 1070px;
+  top: 150px;
+  border-radius: 2px;
+}
+
+.welcome-right {
+  width: 300px;
+  float: right;
+  margin-top: 120px;
+  margin-right: 80px;
+}
+
+.welcome-right h2 {
+  text-align: center;
+}
+
+.skills__item {
+  margin: 40px auto;
+}
+
+h3 {
+  color: #e48257;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.scale {
+  width: 100%;
+  height: 10px;
+  margin: 30px auto;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+
+.scale-item {
+  height: 10px;
+  width: 100px;
+  border-right: #393232 3px solid;
+}
+
+.scale-item:last-child {
+  border-right: none;
+  border-radius: 0 5px 5px 0;
+}
+
+.scale-item:first-child {
+  border-radius: 5px 0 0 5px;
+}
+
+.green {
+  background: #3a6351;
+}
+
+.white {
+  background: #f2edd7;
+}
+/* welcome-section styles end */
+
+/* projects styles start */
+
+.projects {
+  width: 100vw;
+  height: auto;
+  background-color: #3a6351;
+  padding-top: 120px;
+}
+
+.project-title {
+  display: block;
+  margin: 0 auto;
+  border-bottom: #f2edd7 solid 2px;
+  width: max-content;
+  padding: 0 30px 5px 20px;
+}
+.projects-name {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 3.5rem;
+  color: #f2edd7;
+}
+
+/* projects styles end */
+
+/* contacts styles start */
+
+.contact {
+  width: 100vw;
+  height: 100vh;
+  background-color: #393232;
+}
+
+.project-tile {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  justify-content: space-around;
+}
+
+.projects-link {
+  max-width: 30vw;
+  width: 400px;
+  max-height: 30vw;
+  background-color: #393232;
+  text-decoration: none;
+  color: #f2edd7;
+  font-size: 2.5rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+}
+.projects-pic {
+  width: 100%;
+  height: 25vw;
+}
+.projects-link-name {
+  height: 50px;
+  align-self: center;
+}
+
+.contact {
+  width: 100%;
+  height: calc(100vh - 80px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-name {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 4.5rem;
+  color: #f2edd7;
+}
+
+.contact-question {
+  color: #f2edd7;
+  font-size: 2rem;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: 100;
+  font-style: italic;
+  margin: 20px auto;
+}
+
+.profile-links {
+  display: inline-block;
+}
+.fab,
+.fas {
+  color: #f2edd7;
+  font-size: 2.5rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 30px 20px;
+  text-shadow: #1f1b1b 2px 2px;
+}
+.fab:hover,
+.fas:hover {
+  transform: translate(0, 5px);
+}
+
+a:-webkit-any-link {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/* contacts styles end */
+
+/* footer styles start */
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 80px;
+  background: #e48257;
+}
+
+.copyright {
+  margin-left: 80px;
+  display: flex;
+  flex-direction: row;
+  color: #f2edd7;
+  font-size: 2rem;
+}
+
+.copyright > * {
+  margin: auto 5px;
+}
+
+.footer a {
+  margin: auto;
+  margin-right: 80px;
+}
+
+.footer img {
+  height: 40px;
+}
+
+.footer img:hover {
+  opacity: 0.6;
+}
+
+/* footer styles end */
+
+@media only screen and (max-width: 1005px) {
+  .navbar-list {
+    margin-right: 50px;
+  }
 }
